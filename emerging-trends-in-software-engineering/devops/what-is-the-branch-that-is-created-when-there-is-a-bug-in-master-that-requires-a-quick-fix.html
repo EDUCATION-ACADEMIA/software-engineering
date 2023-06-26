@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What is the branch that is created when there is a bug in master that requires a quick fix?
 </title>
-<meta name="description" content="A hotfix branch is created directly off the latest commit on master/main. The only commits allowed on the hotfix branch are ones that explicitly address the software bug. No feature enhancements or chores are allowed on the Gitflow hotfix branch.In the sudden event where you need to fix a bug on the master branch, you can simply switch to the master to fix the bug and then push it, while leaving your new branch intact. You will then merge back the new branch into master later when you are done.Bugfixes generally describe issues that are found and resolved during production or testing phases or even after deployment as part of the normal release cycle of a product. Hotfixes are applied only after the product has been released and is live.$ git checkout-b hotfix-1.2.1 master Switched to a new branch hotfix-1.2.1 $ ./bump-version.sh Files modified successfully, version bumped to 1.2.1. $ $ git commit [hotfix-1.2.1-2 abbe5d6] Fixed severe production problem 5 files changed, 32 insertions(+), 17 deletions(-) More items •21-Sept-2021 ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What is the branch that is created when there is a bug in master that requires a quick fix?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Singletons should be implemented to be Thread-safe:
 </title>
-<meta name="description" content="Create the private constructor to avoid any new object creation with new operator. Declare a private static instance of the same class. Provide a public static method that will return the singleton class instance variable.Making the Bean Thread-Safe. Going back to our previous point, singleton beans are not inherently thread safe. This is because these beans run for the entire lifetime of the application and many HTTP(S) requests are made from different users at the same time.public sealed class Singleton3 { Singleton3() {} private static readonly object lock = new object(); private static Singleton3 instance = null; public static Singleton3 Instance { get { if (instance == null) { lock(lock) { More items •03-May-2021 ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="Singletons should be implemented to be Thread-safe:">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">
